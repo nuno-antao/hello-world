@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image openjdk:7
-        }
-    }                
+    agent { docker 'openjdk:7' }
     stages {
         stage('build') {
             steps {
